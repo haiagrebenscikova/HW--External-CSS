@@ -1,0 +1,19 @@
+body{background-color: #333;}
+nav.accordion{background-color: #555;
+    float:left;}
+    nav.accordion h2{background-color: #999;
+    color: darkorange;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 2px black;}
+    nav.accordion ol{height: 0;
+    overflow: hidden;}
+    nav.accordion ol li{color: #ccc;
+    padding: 5px 30px;
+    text-shadow: 1px 1px 1px #333, -1px -1px 1px #999;}
+    nav.accordion ul li :hover +::before{background-color: #666; content: ">>"; color: darkorange;}
+    nav.accordion ul li :hover +::after{background-color: #666; content: "<<"; color: darkorange; float: right;}
+    nav.accordion ol li :first-child{padding-top: 20px;}
+    nav.accordion ol li :last-child{padding-top: 20px;}
+    nav.accordion>ul>li :hover+ol{height: auto;}
+
+
